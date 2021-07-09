@@ -13,11 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 //@WebServlet("/DBCPInit2")
 public class DBCPInit2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    
+       
     @Override
     public void init() throws ServletException {
-    	//loadDBCDriver();
-    	//initCoonectionPool();
+//    	loadJDBCDriver();
+//    	initConnectionPool();
     	String driver = getInitParameter("jdbcdriver");
     	String url = getInitParameter("jdbcUrl");
     	String user = getInitParameter("dbUser");
@@ -29,7 +29,12 @@ public class DBCPInit2 extends HttpServlet {
     	System.out.println(user);
     	System.out.println(pw);
     	System.out.println(pool);
-    	
-    	
     }
+
 }
+
+
+
+
+
+

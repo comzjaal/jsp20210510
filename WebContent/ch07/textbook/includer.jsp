@@ -16,3 +16,8 @@
 공통변수 DATAFOLDER="<%= dataFolder %>"
 </body>
 </html>
+
+
+
+
+

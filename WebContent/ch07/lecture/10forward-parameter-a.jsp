@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 
@@ -12,12 +12,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		
-		<jsp:forward page="10forward-parameter-b.jsp">
-			<jsp:param value="b" name="code"/>
-			<jsp:param value="30" name="age"/>
-		</jsp:forward>
-	</div>
+<div class="container">
+	
+	<jsp:forward page="10forward-parameter-b.jsp">
+		<jsp:param value="b" name="code"/>
+		<jsp:param value="30" name="age"/>
+	</jsp:forward>
+	
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

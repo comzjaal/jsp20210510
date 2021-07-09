@@ -9,5 +9,6 @@
 <body>
 	이름 : <%= request.getParameter("name") %> <br>
 	나이 : <%= request.getParameter("age") %>
+	
 </body>
 </html>

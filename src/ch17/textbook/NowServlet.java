@@ -37,9 +37,8 @@ public class NowServlet extends HttpServlet {
 		out.println("<body>");
 		out.println("현재시간은");
 		out.println(new Date());
-		out.println("입니다");
-		out.println("</body>");
-		out.println("</html>");
+		out.println("입니다.");
+		out.println("</body></html>");
 	}
 
 	/**

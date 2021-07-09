@@ -55,7 +55,14 @@ public class BoardModifyServlet extends HttpServlet {
 		
 		String path = request.getContextPath() + "/sample1/detail?index=" + index;
 		response.sendRedirect(path);
-				
 	}
 
 }
+
+
+
+
+
+
+
+

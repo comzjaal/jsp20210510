@@ -8,8 +8,6 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
-
 /**
  * Application Lifecycle Listener implementation class BoardAppListener
  *
@@ -35,11 +33,16 @@ public class BoardAppListener implements ServletContextListener {
      * @see ServletContextListener#contextInitialized(ServletContextEvent)
      */
     public void contextInitialized(ServletContextEvent sce)  { 
-        System.out.println("board app listener initialized...");
+    	System.out.println("board app listener initialized.....");
     	ServletContext application = sce.getServletContext();
-        List<Board> list = new ArrayList<>();
-        
+    	List<Board> list = new ArrayList<>();
+    	
     	application.setAttribute("boards", list);
     }
 	
 }
+
+
+
+
+

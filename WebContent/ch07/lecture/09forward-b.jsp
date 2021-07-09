@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 
@@ -12,8 +12,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		<h1>b.jsp</h1>
-	</div>
+<div class="container">
+	<h1>b.jsp</h1>
+</div>
 </body>
 </html>
+
+
+
+

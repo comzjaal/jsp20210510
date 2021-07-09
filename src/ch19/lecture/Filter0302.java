@@ -35,7 +35,7 @@ public class Filter0302 implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		// place your code here
-		System.out.println("filter0302....");
+		System.out.println("filter0302.............");
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
 	}

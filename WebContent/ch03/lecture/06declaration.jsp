@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-    <%!
-    private int add(int a, int b){
-    	return a+b;
-    }
-    %>
+<%!
+private int add(int a, int b) {
+	return a + b;
+}
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,3 +18,10 @@
 
 </body>
 </html>
+
+
+
+
+
+
+

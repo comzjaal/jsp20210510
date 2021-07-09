@@ -21,15 +21,15 @@ public class Servlet10LifeCycle extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-    
+
     @Override
     public void init() throws ServletException {
-    	// TODO Auto-generated method stub
     	super.init();
     	
     	System.out.println("doGet/doPost 메소드보다 먼저 실행되어야 하는 코드");
     	System.out.println("한 번만 실행됨");
     }
+    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */

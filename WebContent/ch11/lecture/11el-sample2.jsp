@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 
@@ -12,10 +12,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		이름 : ${param.myname }<br>
-		나이 : ${param.age }<br>
-		이메일 : ${param.memberEmail }<br>
-	</div>
+<div class="container">
+	이름 : ${param.myname } <br>
+	나이 : ${param.age } <br>
+	이메일 : ${param["memberEmail"] } <br>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

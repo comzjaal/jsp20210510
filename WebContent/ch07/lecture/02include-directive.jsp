@@ -4,8 +4,9 @@
 <html>
 <head>
 <%
-	String str = "java";
+String str = "java";
 %>
+
 <%@ include file="/WEB-INF/subModules/bootstrapHeader.jsp" %>
 
 <title>Insert title here</title>
@@ -14,5 +15,9 @@
 
 <%= str %>
 
+
 </body>
 </html>
+
+
+

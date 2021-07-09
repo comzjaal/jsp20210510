@@ -1,11 +1,13 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
-<%@ page session = "false" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
+<%@ page session="false" %>
+
 <% request.setCharacterEncoding("utf-8"); %>
 <%
 HttpSession session = request.getSession();
-session.setAttribute("a","b");
+session.setAttribute("a", "b");
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,8 +17,8 @@ session.setAttribute("a","b");
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		
-	</div>
+<div class="container">
+	
+</div>
 </body>
 </html>

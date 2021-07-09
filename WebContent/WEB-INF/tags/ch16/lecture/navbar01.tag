@@ -1,6 +1,6 @@
 <%@ tag language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ attribute name="menus" type="java.util.List"%>
+<%@ attribute name="menus" type="java.util.List" %>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
@@ -10,11 +10,13 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-    	<c:forEach items="${menus }" var="item">
+    
+	    <c:forEach items="${menus }" var="item" >
 	      <li class="nav-item active">
 	        <a class="nav-link" href="#">${item } <span class="sr-only">(current)</span></a>
 	      </li>
-      	</c:forEach>
+	    </c:forEach>
+      
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -22,3 +24,5 @@
     </form>
   </div>
 </nav>
+
+

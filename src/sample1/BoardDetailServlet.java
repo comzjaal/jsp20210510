@@ -43,8 +43,9 @@ public class BoardDetailServlet extends HttpServlet {
 		
 		request.setAttribute("board", board);
 		
-		String path ="/WEB-INF/sample1/boardDetail.jsp";
+		String path = "/WEB-INF/sample1/boardDetail.jsp";
 		request.getRequestDispatcher(path).forward(request, response);
+		
 	}
 
 	/**

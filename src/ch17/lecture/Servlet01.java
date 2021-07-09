@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Servlet01
  */
-@WebServlet("/Servlet01") 
+@WebServlet("/Servlet01")
 public class Servlet01 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -27,6 +27,7 @@ public class Servlet01 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("두겟 메소드 일함.");
+		
 	}
 
 	/**

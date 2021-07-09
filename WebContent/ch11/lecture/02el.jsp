@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 
@@ -9,6 +9,7 @@ request.setAttribute("reqAttr1", "reqVal1");
 session.setAttribute("sesAttr1", "sesVal1");
 application.setAttribute("appAttr1", "appVal1");
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,36 +19,46 @@ application.setAttribute("appAttr1", "appVal1");
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		<%
-			out.print(pageContext.getAttribute("pageAttr1"));
-		%>
-		<br>
-		${pageAttr1 }
-		
-		<hr>
-		<%
-			out.print(request.getAttribute("reqAttr1"));
-		%>
-		<br>
-		<%= request.getAttribute("reqAttr1") %>
-		<br>
-		${reqAttr1 }
-		
-		<hr>
-		<%= session.getAttribute("sesAttr1") %>
-		<br>
-		${sesAttr1 }
-		
-		<hr>
-		<%= application.getAttribute("appAttr1") %>
-		<br>
-		${appAttr1 }
-		
-		<hr>
-		<%=request.getAttribute("reqAttr0") %>
-		<br>
-		${reqAttr0 }
-	</div>
+<div class="container">
+	<%
+	out.print(pageContext.getAttribute("pageAttr1"));
+	%>
+	<br>
+	${pageAttr1 }
+	
+	<hr>
+	<%
+	out.print(request.getAttribute("reqAttr1"));
+	%>
+	<br>
+	<%= request.getAttribute("reqAttr1") %>
+	<br>
+	${reqAttr1 }
+	
+	<hr>
+	<%= session.getAttribute("sesAttr1") %>
+	<br>
+	${sesAttr1 }
+	
+	<hr>
+	<%= application.getAttribute("appAttr1") %>
+	<br>
+	${appAttr1 }
+	
+	<hr>
+	<%= request.getAttribute("reqAttr0") %>
+	<br>
+	${reqAttr0 }
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

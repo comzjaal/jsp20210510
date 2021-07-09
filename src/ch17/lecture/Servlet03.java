@@ -26,7 +26,8 @@ public class Servlet03 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("servlet 03 doGet....");
+		System.out.println("servlet 03 doGet ......");
+		
 	}
 
 	/**

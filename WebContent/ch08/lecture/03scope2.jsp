@@ -1,6 +1,6 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
-<%@ page import = "ch08.Book" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
+<%@ page import="ch08.Book" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 

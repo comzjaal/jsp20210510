@@ -8,7 +8,7 @@ public class Book {
 	private int price;
 	private boolean out;
 	
-	public boolean isOut( ) {
+	public boolean isOut() {
 		return out;
 	}
 	
@@ -16,9 +16,10 @@ public class Book {
 		this.out = out;
 	}
 	
-	public String getCode() {
+	public String getBarCode() {
 		return code;
 	}
+
 	public void setCode(String code) {
 		this.code = code;
 	}

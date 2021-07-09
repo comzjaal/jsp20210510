@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 
@@ -7,7 +7,7 @@
 String id = request.getParameter("id");
 String password = request.getParameter("password");
 
-if (id.equals(password)){
+if (id.equals(password)) {
 	session.setAttribute("MEMBERID", id);
 %>
 
@@ -20,9 +20,9 @@ if (id.equals(password)){
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		로그인에 성공했습니다.
-	</div>
+<div class="container">
+	로그인에 성공했습니다.
+</div>
 </body>
 </html>
 

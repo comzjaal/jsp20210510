@@ -1,7 +1,8 @@
 <%@ tag language="java" pageEncoding="UTF-8"%>
 <%@ attribute name="id" required="true" %>
-<%@ attribute name="keyboard" required="true" type="java.lang.Boolean"%>
+<%@ attribute name="keyboard" required="true" type="java.lang.Boolean" %>
 
+<!-- Modal -->
 <div data-keyboard="${keyboard }" class="modal fade" id="${id }" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

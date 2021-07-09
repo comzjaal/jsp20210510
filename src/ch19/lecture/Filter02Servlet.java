@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Filter02Servlet
+ * Servlet implementation class Fileter02Servlet
  */
 @WebServlet("/filter02")
 public class Filter02Servlet extends HttpServlet {
@@ -29,7 +29,7 @@ public class Filter02Servlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		out.print("<h1>Filter02 Servlet ... /<h1>");
+		out.print("<h1>Filter02 Servlet ...</h1>");
 	}
 
 	/**

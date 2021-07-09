@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 
@@ -13,13 +13,25 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		<%-- <%= member.getName() %> (<%= member.getId() %>) 회원님
-		안녕하세요. --%>
-		<jsp:getProperty property="name" name="member"/>
-		(<jsp:getProperty property="id" name="member"/>)회원님
-		안녕하세요.
-		
-	</div>
+<div class="container">
+	<%= member.getName() %> (<%= member.getId() %>) 회원님
+	안녕하세요.	
+	
+	<br>
+	
+	<jsp:getProperty property="name" name="member"/>
+	(<jsp:getProperty property="id" name="member"/>) 회원님
+	안녕하세요.
+	
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

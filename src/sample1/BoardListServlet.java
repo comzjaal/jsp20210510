@@ -2,17 +2,14 @@ package sample1;
 
 import java.io.IOException;
 import java.util.List;
+
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.sun.glass.ui.Application;
-
 
 /**
  * Servlet implementation class BoardListServlet
@@ -40,10 +37,10 @@ public class BoardListServlet extends HttpServlet {
 		request.setAttribute("list", list);
 		
 		String path = "/WEB-INF/sample1/boardList.jsp";
-		RequestDispatcher dispatcher = request.getRequestDispatcher(path);
+		RequestDispatcher dispatcher =  request.getRequestDispatcher(path);
 		dispatcher.forward(request, response);
 		
-//		for(Board board : list) {
+//		for (Board board : list) {
 //			out.print("<li>");
 //			out.print(board.getTitle());
 //			out.print("</li>");

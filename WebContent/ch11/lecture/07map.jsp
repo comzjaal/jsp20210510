@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 <%
@@ -12,7 +12,7 @@ map.put("h-t-m-l", "html");
 map.put("hello world!", "hi");
 
 pageContext.setAttribute("map", map);
-pageContext.setAttribute("python", "python");
+pageContext.setAttribute("python", "js");
 %>
 <!DOCTYPE html>
 <html>
@@ -23,18 +23,24 @@ pageContext.setAttribute("python", "python");
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		java : ${map.java } <br>
-		css : ${map.css } <br>
-		js : ${map["js"] } <br>
-		python : ${map[python] } <br>
-		
-		<hr>
-		h-t-m-l : ${map.h-t-m-l } <br>
-		h-t-m-l : ${map["h-t-m-l"] } <br>
-		<%-- hello world! : ${map.hello world! } <br> --%>
-		hello world! : ${map["hello world!"] } <br>
-		 
-	</div>
+<div class="container">
+	java : ${map.java } <br>
+	css : ${map.css } <br>
+	js : ${map["js"] } <br>
+	python : ${map[python] } <br>
+	
+	<hr>
+	h-t-m-l : ${map.h-t-m-l } <br>
+	h-t-m-l : ${map["h-t-m-l"] } <br>
+	<%-- hello world! : ${map.hello world! } <br> --%>
+	hello world! : ${map["hello world!"] } <br>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+

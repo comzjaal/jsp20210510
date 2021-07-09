@@ -1,6 +1,7 @@
 <%@ tag language="java" pageEncoding="UTF-8"%>
-<%@ attribute name="id" required="true"%>
+<%@ attribute name="id" required="true" %>
 
+<!-- Modal -->
 <div class="modal fade" id="${id }" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -11,7 +12,7 @@
         </button>
       </div>
       <div class="modal-body">
-        ...${id }
+        ... ${id }
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 
@@ -12,19 +12,27 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		cookie1 : ${cookie["my-cookie"] } <br>
-		cookie2 : ${cookie.JSESSIONID } <br>
-		
-		<hr>
-		
-		cookie value 1 : ${cookie["my-cookie"].value } <br>
-		cookie value 2 : ${cookie.JSESSIONID.value } <br>
-		
-		<hr>
-		
-		cookie httpOnly 1 : ${cookie["my-cookie"].httpOnly } <br>
-		cookie httpOnly 2 : ${cookie.JSESSIONID.httpOnly } <br>
-	</div>
+<div class="container">
+	cookie1 : ${cookie["my-cookie"] }
+	<br>
+	cookie2 : ${cookie.JSESSIONID }
+	
+	<hr>
+	
+	cookie value 1 : ${cookie["my-cookie"].value }
+	<br>
+	cookie value 2 : ${cookie.JSESSIONID.value }
+	
+	<hr>
+	cookie httpOnly 1 : ${cookie["my-cookie"].httpOnly }
+	<br>
+	cookie httpOnly 2 : ${cookie.JSESSIONID.httpOnly }
+</div>
 </body>
 </html>
+
+
+
+
+
+

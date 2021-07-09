@@ -22,5 +22,5 @@ public class Board {
 	}
 	public void setBody(String body) {
 		this.body = body;
-	}	
+	}
 }

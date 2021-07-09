@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<%@ page import = "java.util.*" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="java.util.*" %>
 
 <% request.setCharacterEncoding("utf-8"); %>
 
@@ -12,14 +12,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class = "container">
-		<%
-			Calendar cal = (Calendar) request.getAttribute("time");
-		%>		
-		
-		현재 시간은 <%= cal.get(Calendar.HOUR) %> 시
-		<%= cal.get(Calendar.MINUTE) %> 분
-		<%= cal.get(Calendar.SECOND) %> 초 입니다.
-	</div>
+<div class="container">
+	<%
+	Calendar cal = (Calendar) request.getAttribute("time");
+	%>	
+	
+	현재 시간은 <%= cal.get(Calendar.HOUR) %> 시
+	<%= cal.get(Calendar.MINUTE) %> 분
+	<%= cal.get(Calendar.SECOND) %> 초 입니다.
+</div>
 </body>
 </html>
+
+
+
+
+
+

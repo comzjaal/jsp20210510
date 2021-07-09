@@ -26,7 +26,7 @@ public class Servlet08Extension extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().print("Servlet08 doGet...");
+		response.getWriter().print("Servlet08 doGet ...");
 	}
 
 	/**
